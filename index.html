@@ -12,38 +12,51 @@
 
 <body>
     <header>
+        <h1 class="title">David Tunnell</h1>
         <nav class="header">
-            <h1>David Tunnell</h1>
-            <a href="#portfolio">Portfolio</a>
-            <a href="https://stackoverflow.com/users/1524210/david-tunnell?tab=profile" target="_blank">Stack Overflow</a>
-            <a href="https://github.com/DavidTunnell" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/david-tunnell-61485223/" target="_blank">LinkedIn</a>
-            <a href="#contact">Contact</a>
+            <a href="#portfolio" class="nav">Portfolio</a>
+            <a href="https://stackoverflow.com/users/1524210/david-tunnell?tab=profile" class="nav" target="_blank">Stack Overflow</a>
+            <a href="https://github.com/DavidTunnell" class="nav" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/david-tunnell-61485223/" class="nav" target="_blank">LinkedIn</a>
+            <a href="#contact" class="nav">Contact</a>
         </nav>
-
-        <section class="masthead">
-            <img class="headshot" src="./assets/images/david-tunnell-profile.png">
+    </header>
+    <main>
+        <section class="hero">
+            <img class="head-shot" src="./assets/images/david-tunnell-profile.png">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatum ut earum amet reprehenderit sequi in cumque. Nulla laudantium fugit labore libero dignissimos nisi praesentium tenetur harum voluptatum, non similique?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatum ut earum amet reprehenderit sequi in cumque. Nulla laudantium fugit labore libero dignissimos nisi praesentium tenetur harum voluptatum, non similique? Lorem ipsum,
                 dolor sit amet consectetur adipisicing elit. Quas odio, necessitatibus, eius maxime praesentium consequuntur veniam dolorum minus id nesciunt tempore sequi facilis. Assumenda aperiam officia labore officiis quod aliquid.</p>
         </section>
-    </header>
-    <main>
-        <!-- TODO: add links that dont break css, made less wide to look better on page, update mouseover effect. Improve padding/margin for section -->
-        <!-- look at this: https://stackoverflow.com/questions/42970452/flexbox-a-tag-breaks-layout -->
-        <section class="portfolio">
+        <!-- TODO: update mouseover effect.-->
+        <section id="portfolio">
             <h2>Portfolio</h2>
-            <div class="container">
-                <div class="item project-one">Example Project 1 with Image Background</div>
-                <div class="item project-two">Example Project 2 with Image Background</div>
-                <div class="item project-three">Example Project 3 with Color Background</div>
-                <div class="item project-four">Example Project 4 with Color Background</div>
-                <div class="item project-five">Example Project 5 with Color Background</div>
-                <div class="item project-six">Example Project 6 with Image Background</div>
+            <div class="outer-container">
+                <div class="container">
+                    <a href="" class="item project-one">
+                        <div>Example Project 1 with Image Background</div>
+                    </a>
+                    <a href="" class="item project-two">
+                        <div>Example Project 2 with Image Background</div>
+                    </a>
+                    <a href="" class="item project-three">
+                        <div>Example Project 3 with Color Background</div>
+                    </a>
+                    <a href="" class="item project-four">
+                        <div>Example Project 4 with Color Background</div>
+                    </a>
+                    <a href="" class="item project-five">
+                        <div>Example Project 5 with Color Background</div>
+                    </a>
+                    <a href="" class="item project-six">
+                        <div>Example Project 6 with Image Background</div>
+                    </a>
+
+                </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact">
             <h2>Contact Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nesciunt illum porro omnis magni optio molestiae non, fugit obcaecati esse. Praesentium soluta, exercitationem nam deleniti doloremque et culpa explicabo eligendi.</p>
         </section>
