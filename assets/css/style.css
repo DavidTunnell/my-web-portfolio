@@ -1,3 +1,13 @@
+/* Variables */
+
+:root {
+    --main-feel-color: #CD5334;
+    --darker-offset-color: #546F91;
+    --dark-color: #2E282A;
+    --box-shadow-color: rgba(0, 0, 0, 0.56);
+}
+
+
 /* Global */
 
 * {
@@ -33,16 +43,58 @@ html {
 }
 
 
-/* Media Queries */
+/* Classes */
 
-@media screen and (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
+.contact-container {
+    box-shadow: var(--box-shadow-color) 0px 22px 70px 4px;
+    background-color: var(--darker-offset-color);
+    width: 50%;
+    margin: 2em auto 2em auto;
+    padding: 1.5em;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-/* Classes */
+.form-label {
+    height: 60px;
+}
+
+.form-input {
+    border-radius: 6px;
+    color: black;
+    height: 60px;
+    margin-bottom: 0.5em;
+    text-align: left;
+    width: 80%;
+}
+
+.form-input:focus {
+    border: 3px solid var(--main-feel-color);
+}
+
+.form-button {
+    margin-top: 1em;
+    height: 3em;
+    width: 7em;
+    background-color: var(--dark-color);
+    border: 0;
+    outline: solid 0px var(--main-feel-color);
+    transition: outline 0.3s linear, background-color 1.6s linear;
+}
+
+.form-button:hover {
+    outline-width: 10px;
+    background-color: #181516;
+}
+
+.form-message {
+    height: 7em;
+}
 
 .nav {
     padding: 0.7em;
@@ -70,7 +122,7 @@ html {
 }
 
 .title {
-    background: #CD5334;
+    background: var(--main-feel-color);
     margin: 0%;
     padding-top: 0.6em;
     padding-bottom: 0.25em;
@@ -78,13 +130,13 @@ html {
 
 .header {
     padding: 20px;
-    background: #CD5334;
+    background: var(--main-feel-color);
     padding-bottom: 1em;
 }
 
 .hero {
     padding: 20px;
-    background: #546F91;
+    background: var(--darker-offset-color);
 }
 
 .head-shot {
@@ -94,12 +146,12 @@ html {
 
 .primary-footer {
     padding: 20px;
-    background: #546F91;
+    background: var(--darker-offset-color);
 }
 
 .copyright {
     padding: 20px;
-    background: #2E282A;
+    background: var(--dark-color);
 }
 
 
@@ -131,7 +183,7 @@ html {
 }
 
 .item:hover {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: var(--box-shadow-color) 0px 22px 70px 4px;
     transform: scale(1.08);
 }
 
@@ -148,7 +200,7 @@ html {
 }
 
 .project-three {
-    background-color: #546F91;
+    background-color: var(--darker-offset-color);
     flex-basis: 96%;
 }
 
@@ -171,10 +223,19 @@ html {
 
 #portfolio {
     padding: 20px;
-    background: #2E282A;
+    background: var(--dark-color);
 }
 
 #contact {
     padding: 20px;
-    background: #CD5334;
+    background: var(--main-feel-color);
+}
+
+
+/* Media Queries */
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
