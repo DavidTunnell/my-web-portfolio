@@ -227,7 +227,7 @@ body {
     transform: scale(1.03);
 }
 
-.item:nth-child(3n) {
+.item:nth-child(3n-2) {
     width: 100%;
 }
 
@@ -244,7 +244,8 @@ body {
 }
 
 .project-four {
-    background-color: #EDB88B;
+    background-image: url("../images/bg-placeholder3.jpg");
+    background-position: 50% 20%;
 }
 
 .project-five {
@@ -252,8 +253,7 @@ body {
 }
 
 .project-six {
-    background-image: url("../images/bg-placeholder3.jpg");
-    background-position: 50% 20%;
+    background-color: #EDB88B;
 }
 
 .project-text {
