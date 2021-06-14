@@ -42,6 +42,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+}
+
 
 /* Classes */
 
@@ -161,18 +165,27 @@ html {
     margin-left: 2%;
 }
 
-.footer-item-child {
-    margin: 20px 0 0 20px;
-    padding-top: 0;
+.footer-icons {
+    margin: 0 6px 0 6px;
+    padding: 0;
+}
+
+.footer-item h2 {
+    margin: 10px;
+    padding: 0;
 }
 
 .copyright {
-    padding: 2px;
+    padding: 1px;
     background: var(--dark-color);
 }
 
+.copyright p {
+    margin: 20px;
+}
+
 .fab {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .fab:hover {
@@ -185,17 +198,18 @@ html {
 .outer-container {
     display: flex;
     justify-content: center;
-    padding-top: 2em;
+    padding: 0.75em 0 2em 0;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     width: 85%;
+    margin: auto;
 }
 
 .item {
-    width: 48%;
+    width: 50%;
     height: 20em;
     object-fit: cover;
     align-items: center;
@@ -205,6 +219,7 @@ html {
     background-position: 50% 50%;
     transition: transform .05s;
     position: static;
+    margin: auto;
 }
 
 .item:hover {
@@ -226,7 +241,6 @@ html {
 
 .project-three {
     background-color: var(--darker-offset-color);
-    flex-basis: 96%;
 }
 
 .project-four {
@@ -239,8 +253,11 @@ html {
 
 .project-six {
     background-image: url("../images/bg-placeholder3.jpg");
-    flex-basis: 96%;
     background-position: 50% 20%;
+}
+
+.project-text {
+    margin: 10px;
 }
 
 
@@ -252,7 +269,7 @@ html {
 }
 
 #contact {
-    padding: 20px;
+    padding: 0.5em 0.5em 1em 0.5em;
     background: var(--main-feel-color);
 }
 
@@ -262,5 +279,54 @@ html {
 @media screen and (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 20px;
+    }
+    /* TODO: add mobile hamburger nav 
+    nav {
+    }
+    */
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+    .header a {
+        display: block;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+    .head-shot {
+        width: 75%;
+    }
+    .container {
+        width: 100%;
+    }
+    .contact-container {
+        width: 80%;
+    }
+    .form-label {
+        margin: 0.5em 0 -0.5em 0;
+    }
+    .form-input {
+        width: 100%;
+    }
+    .fab {
+        margin-top: 5px;
+    }
+    .footer-item h2 {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .primary-footer {
+        flex-direction: column;
     }
 }
