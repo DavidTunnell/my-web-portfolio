@@ -77,6 +77,9 @@ html {
     border: 3px solid var(--main-feel-color);
 }
 
+
+/* Button border animation inspired from https://css-tricks.com/animating-border/ */
+
 .form-button {
     margin-top: 1em;
     height: 3em;
@@ -146,12 +149,34 @@ html {
 
 .primary-footer {
     padding: 20px;
-    background: var(--darker-offset-color);
+    background: var(--dark-color);
+    display: flex;
+}
+
+.footer-item {
+    flex-grow: 1;
+}
+
+.footer-item+.footer-item {
+    margin-left: 2%;
+}
+
+.footer-item-child {
+    margin: 20px 0 0 20px;
+    padding-top: 0;
 }
 
 .copyright {
-    padding: 20px;
+    padding: 2px;
     background: var(--dark-color);
+}
+
+.fab {
+    margin-top: 30px;
+}
+
+.fab:hover {
+    color: var(--darker-offset-color);
 }
 
 
@@ -160,7 +185,7 @@ html {
 .outer-container {
     display: flex;
     justify-content: center;
-    margin: 2em;
+    padding-top: 2em;
 }
 
 .container {
@@ -184,7 +209,7 @@ html {
 
 .item:hover {
     box-shadow: var(--box-shadow-color) 0px 22px 70px 4px;
-    transform: scale(1.08);
+    transform: scale(1.03);
 }
 
 .item:nth-child(3n) {
