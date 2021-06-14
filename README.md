@@ -3,4 +3,8 @@ This is the beginning of my web portfolio in pure HTML/CSS coded from scratch wi
 
 It can be viewed live here: https://github.com/DavidTunnell/my-web-portfolio
 
+## Desktop Screenshot
 ![Screenshot](./assets/images/web-portfolio-full-screenshot.png)
+
+## Mobile Screenshot
+![Screenshot](./assets/images/web-portfolio-full-screenshot-mobile.png)
