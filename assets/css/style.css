@@ -38,6 +38,10 @@ h2 {
     font-size: 1.60em;
 }
 
+h3 {
+    font-size: 0.75em;
+}
+
 html {
     scroll-behavior: smooth;
 }
