@@ -346,6 +346,17 @@ body {
     .download-resume img {
         width: 60%;
     }
+    .project-two {
+        background-color: #EEEEEE;
+        background-image: none;
+    }
+    .project-three {
+        background-color: var(--main-feel-color);
+        background-image: none;
+    }
+    .project-three:before {
+        content: "Multiple Choice Quiz";
+    }
 }
 
 @media screen and (max-width: 480px) {
