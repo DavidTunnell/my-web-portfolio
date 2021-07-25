@@ -272,6 +272,14 @@ body {
     color: black;
 }
 
+.download-resume {
+    margin: 1em 0 -0.4em 0;
+}
+
+.download-resume img {
+    width: 25%;
+}
+
 
 /* IDs */
 
@@ -334,6 +342,9 @@ body {
     }
     .footer-item h2 {
         margin-top: 25px;
+    }
+    .download-resume img {
+        width: 60%;
     }
 }
 
