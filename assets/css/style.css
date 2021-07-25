@@ -236,20 +236,24 @@ body {
 }
 
 .project-one {
-    background-image: url("../images/bg-placeholder1.jpg");
+    background-image: url("../images/discogra-bg.png");
+    background-position: 50% 50%;
 }
 
 .project-two {
-    background-image: url("../images/bg-placeholder2.jpg");
+    background-image: url("../images/weather-bg.png");
+    background-position: 90% 0%;
+    color: black;
 }
 
 .project-three {
-    background-color: var(--darker-offset-color);
+    background-image: url("../images/quiz-bg.png");
+    background-position: 50% 50%;
 }
 
 .project-four {
     background-image: url("../images/bg-placeholder3.jpg");
-    background-position: 50% 20%;
+    background-position: 50% 50%;
 }
 
 .project-five {
@@ -262,6 +266,10 @@ body {
 
 .project-text {
     margin: 10px;
+}
+
+.dark-text {
+    color: black;
 }
 
 
