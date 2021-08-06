@@ -302,6 +302,23 @@ body {
     }
 }
 
+@media screen and (max-width: 1800px) {
+    .project-two {
+        background-color: #EEEEEE;
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .project-three {
+        background-color: var(--main-feel-color);
+        background-image: none;
+    }
+    .project-three:before {
+        content: "Multiple Choice Quiz";
+    }
+}
+
 @media screen and (max-width: 768px) {
     * {
         font-size: 20px;
@@ -345,17 +362,6 @@ body {
     }
     .download-resume img {
         width: 60%;
-    }
-    .project-two {
-        background-color: #EEEEEE;
-        background-image: none;
-    }
-    .project-three {
-        background-color: var(--main-feel-color);
-        background-image: none;
-    }
-    .project-three:before {
-        content: "Multiple Choice Quiz";
     }
 }
 
