@@ -302,7 +302,12 @@ body {
     .project-five {
         background-color: #ffffff;
         /* background-image: none; */
-        background-size: 150% 70%;
+        background-size: 175% 70%;
+    }
+    .project-four {
+        background-color: #2a2c2e;
+        background-image: url("../images/feedster-logo.png");
+        background-size: 70% 22%;
     }
 }
 
@@ -362,5 +367,11 @@ body {
 @media screen and (max-width: 480px) {
     .primary-footer {
         flex-direction: column;
+    }
+    .project-five {
+        background-size: 150% 50%;
+    }
+    .project-four {
+        background-size: 75% 20%;
     }
 }
