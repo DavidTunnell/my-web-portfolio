@@ -238,8 +238,8 @@ body {
 }
 
 .project-two {
-    background-image: url("../images/weather-bg.png");
-    background-position: 90% 0%;
+    background-image: url("../images/weather-bg-new.png");
+    background-position: 60% 0%;
     color: black;
 }
 
@@ -249,12 +249,13 @@ body {
 }
 
 .project-four {
-    background-image: url("../images/bg-placeholder3.jpg");
+    background-image: url("../images/feedster-bg.png");
     background-position: 50% 50%;
 }
 
 .project-five {
-    background-color: #17bebb;
+    background-image: url("../images/tech-blog-bg.png");
+    background-position: 50% 50%;
 }
 
 .project-six {
@@ -293,10 +294,15 @@ body {
     }
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1400px) {
     .project-two {
         background-color: #eeeeee;
         background-image: none;
+    }
+    .project-five {
+        background-color: #ffffff;
+        /* background-image: none; */
+        background-size: 150% 70%;
     }
 }
 
