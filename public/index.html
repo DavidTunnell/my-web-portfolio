@@ -153,12 +153,15 @@
                             class="form-input user-input-name"
                             name="name"
                             placeholder="Your name.."
+                            required
                         />
                         <label class="form-label">Email</label>
                         <input
+                            type="email"
                             class="form-input user-input-email"
                             name="email"
                             placeholder="Your email address.."
+                            required
                         />
                         <label class="form-label">Phone Number</label>
                         <input
@@ -171,7 +174,9 @@
                             class="form-input form-message user-input-message"
                             name="message"
                             placeholder="Write something.."
+                            required
                         ></textarea>
+                        <span class="form-feedback"></span>
                         <input
                             class="form-button"
                             type="submit"
