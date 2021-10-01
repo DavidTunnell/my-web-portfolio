@@ -38,9 +38,9 @@ app.post("/text-email", (req, res) => {
     `;
 
     const mailData = {
-        from: process.env.HEROKU_APP_NAME + "@heroku-express.com",
+        from: process.env.GMAIL_ADDRESS, //it won't send from anything other than this anyway
         to: process.env.GMAIL_ADDRESS,
-        subject: process.env.HEROKU_APP_NAME + " form submission",
+        subject: process.env.APP_NAME + " form submission",
         text: text,
         html: html,
     };

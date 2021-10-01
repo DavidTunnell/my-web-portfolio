@@ -15,7 +15,10 @@ const submitHandler = async (event) => {
         formFeedbackSpan.style.color = "#FFCFCF";
         return;
     }
-
+    console.log(name);
+    console.log(email);
+    console.log(phoneNumber);
+    console.log(message);
     if (name && email && phoneNumber && message) {
         const response = await fetch("/text-email", {
             method: "POST",
