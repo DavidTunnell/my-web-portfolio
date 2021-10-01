@@ -1,22 +1,23 @@
 /* Variables */
 
 :root {
-    --main-feel-color: #CD5334;
-    --darker-offset-color: #546F91;
-    --dark-color: #2E282A;
+    --main-feel-color: #cd5334;
+    --darker-offset-color: #546f91;
+    --dark-color: #2e282a;
     --box-shadow-color: rgba(0, 0, 0, 0.56);
 }
-
 
 /* Global */
 
 * {
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
     color: white;
     font-size: 30px;
     text-align: center;
 }
-
 
 /* Elements */
 
@@ -35,7 +36,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.60em;
+    font-size: 1.6em;
 }
 
 h3 {
@@ -49,7 +50,6 @@ html {
 body {
     margin: 0;
 }
-
 
 /* Classes */
 
@@ -85,7 +85,6 @@ body {
     border: 3px solid var(--main-feel-color);
 }
 
-
 /* Button border animation inspired from https://css-tricks.com/animating-border/ */
 
 .form-button {
@@ -110,7 +109,6 @@ body {
 .nav {
     padding: 0.7em;
 }
-
 
 /* Link Underline Animation inspired from: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 
@@ -165,7 +163,7 @@ body {
     flex-grow: 1;
 }
 
-.footer-item+.footer-item {
+.footer-item + .footer-item {
     margin-left: 2%;
 }
 
@@ -196,7 +194,6 @@ body {
     color: var(--darker-offset-color);
 }
 
-
 /* Portfolio Layout inspired from: https://tobiasahlin.com/blog/common-flexbox-patterns/ */
 
 .outer-container {
@@ -221,7 +218,7 @@ body {
     justify-content: center;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    transition: transform .05s;
+    transition: transform 0.05s;
     position: static;
     margin: auto;
 }
@@ -257,11 +254,11 @@ body {
 }
 
 .project-five {
-    background-color: #17BEBB;
+    background-color: #17bebb;
 }
 
 .project-six {
-    background-color: #EDB88B;
+    background-color: #edb88b;
 }
 
 .project-text {
@@ -276,11 +273,6 @@ body {
     margin: 1em 0 -0.4em 0;
 }
 
-.download-resume img {
-    width: 25%;
-}
-
-
 /* IDs */
 
 #portfolio {
@@ -293,7 +285,6 @@ body {
     background: var(--main-feel-color);
 }
 
-
 /* Media Queries */
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -304,7 +295,7 @@ body {
 
 @media screen and (max-width: 1800px) {
     .project-two {
-        background-color: #EEEEEE;
+        background-color: #eeeeee;
         background-image: none;
     }
 }
@@ -359,9 +350,6 @@ body {
     }
     .footer-item h2 {
         margin-top: 25px;
-    }
-    .download-resume img {
-        width: 60%;
     }
 }
 
