@@ -9,16 +9,17 @@ const submitHandler = async (event) => {
         .querySelector(".user-input-phone")
         .value.trim();
     const message = document.querySelector(".user-input-message").value.trim();
-
+    console.log(name);
+    console.log(email);
+    console.log(phoneNumber);
+    console.log(message);
+    console.log(validateEmail(email));
     if (!validateEmail(email)) {
         formFeedbackSpan.innerHTML = "Please enter a valid email address.";
         formFeedbackSpan.style.color = "#FFCFCF";
         return;
     }
-    console.log(name);
-    console.log(email);
-    console.log(phoneNumber);
-    console.log(message);
+
     if (name && email && phoneNumber && message) {
         const response = await fetch("/text-email", {
             method: "POST",
