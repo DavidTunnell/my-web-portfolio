@@ -25,13 +25,24 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/text-email", (req, res) => {
-    const { from, subject, text } = req.body;
+    const { name, email, phoneNumber, message } = req.body;
+
+    const text = `Name: ${name} \n Email: ${email} \n Phone #: ${phoneNumber} \n Message: ${message}`;
+    const html = `
+    <ul>
+        <li>Name: ${name}</li>
+        <li>Email: ${email}</li>
+        <li>Phone #: ${phoneNumber}</li>
+        <li>Message: ${message}</li>
+    </ul>
+    `;
+
     const mailData = {
-        from: from,
+        from: process.env.HEROKU_APP_NAME + "@heroku-express.com",
         to: process.env.GMAIL_ADDRESS,
-        subject: subject,
+        subject: process.env.HEROKU_APP_NAME + " form submission",
         text: text,
-        html: "<b>Hey there! </b><br> This is our first message sent with Nodemailer<br/>",
+        html: html,
     };
 
     transporter.sendMail(mailData, (error, info) => {
