@@ -381,6 +381,9 @@ body {
     .footer-item h2 {
         margin-top: 25px;
     }
+    .link-desc {
+        font-size: 0.6em;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -388,9 +391,9 @@ body {
         flex-direction: column;
     }
     .project-five {
-        background-size: 150% 50%;
+        background-size: 170% 50%;
     }
     .project-four {
-        background-size: 75% 20%;
+        background-size: 75% 17%;
     }
 }
